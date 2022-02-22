@@ -1,0 +1,38 @@
+OBS: Importação feita no 01-IMPORTACAO
+
+#====================================
+
+# OPERAÇÃO BÁSICA
+
+#SOMA TOTAL dos valores da coluna
+faturamento_total = tabela["nome_da_coluna"].sum()
+
+#MÁXIMO
+faturamento_maior_valor = tabela["Valor Final"].max()
+display(faturamento_maior_valor)
+
+#MIN
+faturamento_menor_valor = tabela["Valor Final"].min()
+display(faturamento_menor_valor)
+
+#MÉDIA - ARREDONDAR 
+faturamento_media = tabela["Valor Final"].mean()
+round(faturamento_media, 2)
+
+#====================================
+
+
+#====================================
+# OPERAÇÃO MATEMÁTICA AGRUPADA
+
+#SOMA TOTAL AGRUPADA
+#------> Colocar entre 2 colxetes, quando for mais de uma coluna
+faturamento_por_loja = tabela[["ID Loja","Valor Final"]].groupby("ID Loja").sum()
+display(faturamento_por_loja)
+
+#SOMA TOTAL Agrupando duas colunas
+faturamento_por_produto = tabela[["ID Loja","Produto","Valor Final"]].groupby(["ID Loja","Produto"]).sum()
+display(faturamento_por_produto)
+
+
+
