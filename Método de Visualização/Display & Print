@@ -1,0 +1,13 @@
+#==============================================
+import pandas as pd
+tabela_vendas = pd.read_excel("Vendas.xlsx")
+#==============================================
+
+#Visualizar as primeiras linhas 4 linhas
+display(tabela_vendas.head(4))
+
+# Mostra o Total de Linhas e Colunas
+print(tabela_vendas.shape)
+
+# Resumo
+display(tabela_vendas.describe())
