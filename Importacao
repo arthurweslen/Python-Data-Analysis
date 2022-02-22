@@ -1,0 +1,10 @@
+#====================================
+#Importando a biblioteca Pandas e "apelidando"
+import pandas as pd
+
+#Importando tabela do excel ou qualquer outro arquivp
+tabela = pd.read_excel("nomedoarquivo.xlsx")
+
+#Visualizar tabela
+display(tabela)
+#====================================
