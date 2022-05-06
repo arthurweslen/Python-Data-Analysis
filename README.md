@@ -15,4 +15,3 @@ O Matplotlib é uma biblioteca para a visualização de dados em Python. Ele apr
 
 NumPy, denominado dessa forma devido a abreviação de Numerical Python (Python Numérico), é uma biblioteca de código aberto destinada a realizar operações em arrays multidimensionais, amigavelmente denominada como ndarray nesta biblioteca.
 
-### Teste Marcelo
